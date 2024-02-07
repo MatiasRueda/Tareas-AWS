@@ -1,0 +1,115 @@
+.home {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;  
+  justify-content: space-around;
+}
+
+.cont-controlador-ingresar-registrar {
+  height: 30rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cont-ingresar-registrar {
+  height: 3rem;
+  width: 100%;
+  display: flex;
+}
+
+.cont-ingresar-registrar button {
+  width: 50%;
+  border: 0.1rem solid black;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: white;
+}
+
+.cont-ingresar-registrar button:hover {
+  color: white;
+  background-color: black;
+}
+
+#ingresar, #registrar {
+  width: 100%;
+  flex: 1 1 auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cont-cargando-ingresar-register {
+  width: 100%;
+  flex: 1 1 auto;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.cont-ingresar, .cont-registrar {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+ 
+#ingresar .cont-label {
+  text-align: center;
+}
+
+#ingresar .cont-input ,  #registrar .cont-input {
+  height: 4rem;
+  width: 100%;
+  font-size: 0.8em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+  justify-content: center;
+}
+
+#ingresar .cont-input input, #registrar .cont-input input {
+  height: 1.7rem;
+  box-sizing: border-box;
+  padding-left: 0.5rem;
+}
+
+#ingresar .cont-error, #registrar .cont-error {
+  height: 1.3rem;
+  width: 100%;
+  text-align: center;
+}
+
+.cont-form-botones-ingresar, .cont-form-botones-registrar {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cont-form-botones-ingresar button, .cont-form-botones-registrar button {
+  height: 3rem;
+  width: 7rem;
+  cursor: pointer;
+  border: 0.2rem solid black;
+  background-color: white;
+}
+
+.cont-form-botones-ingresar button:hover , .cont-form-botones-registrar button:hover {
+  color: white;
+  background-color: black;
+}
+
+@media (max-width: 600px) {
+  .home h1 {
+    width: 100%;
+    text-align: center;
+  }
+}

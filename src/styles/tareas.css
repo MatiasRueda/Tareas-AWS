@@ -1,0 +1,307 @@
+header {
+  height: 5rem;
+}
+
+.tareas {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tareas:has(.mas-detalles), .tareas:has(.cont-mensaje) {
+  overflow-y: hidden;
+}
+
+.encabezado-tareas {
+  text-align: center;
+  display: flex;
+}
+
+.encabezado-tareas h1 {
+  flex: 1 1 auto;
+  margin-right: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cont-salir {
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cont-salir button {
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+  background-color: white;
+}
+
+.cont-salir button:hover {
+  color: white;
+  background-color: black;
+}
+
+.lista-tareas {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.cont-agregar-tarea {
+  height: 22rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cont-agregar-tarea h3 {
+  height: 2.5rem;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.cont-cargando-ingresar-register {
+  width: 20rem;
+  flex: 1 1 auto;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.formulario-tareas-agregar {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#agregarTarea {
+  flex: 1 1 auto;
+  background-color: white;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#agregarTarea textarea {
+  height: 3rem;
+  width: 14rem !important;
+  color: black;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  padding-left: 0.5rem;
+  font-size: 1em;
+  resize: none;
+  outline: none;
+  font-family: inherit;
+}
+
+.cont-agregarTarea {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#agregarTarea .cont-input {
+  height: 4.5rem;
+  width: 13rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+
+#agregarTarea .cont-input input {
+  height: 1.3rem;
+  width: 100%;
+  padding-left: 0.3rem;
+}
+
+#agregarTarea .cont-error {
+  height: 2rem; 
+  width: 100%;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.cont-form-botones-agregarTarea {
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cont-form-botones-agregarTarea button {
+  height: 3.4rem;
+  width: 8rem;
+  cursor: pointer;
+  background-color: white;
+}
+
+.cont-form-botones-agregarTarea button:hover {
+  color: white;
+  background-color: black;
+}
+
+.cont-lista-tarea {
+  height: 22rem;
+  width: 60rem;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cont-cabecera {
+  height: 3.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#masDetalles button {
+  color: white;
+  background-color: rgb(148, 148, 239);
+}
+
+#eliminar button {
+  color: white;
+  background-color: red;
+}
+
+.cont-cabecera *, .cont-tarea *  {
+  width: 15rem;
+  text-align: center;
+}
+
+.cont-tarea p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cont-lista {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-gutter: stable both-edges;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.cont-tarea button {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+.cont-tarea {
+  height: 3.5rem;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1280px) and (min-width: 830px) { 
+  .encabezado-tareas h1 {
+    margin-right: 3rem;
+  }
+
+  .tareas {
+    margin-top: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .lista-tareas {
+    height: auto;
+    width: 100%;
+  }
+
+  .formulario-tareas-agregar {
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (max-width: 820px) and (min-width: 610px) {
+  .lista-tareas {
+    height: auto;
+    width: 90%;
+  }
+  .tareas {
+    margin-top: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .cont-lista-tarea {
+    width: 44rem;
+  }
+
+  .cont-tarea * {
+    width: 11rem;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .encabezado-tareas h1 {
+    margin-right: 0;
+  }
+
+  .cont-salir {
+    width: 3rem;
+  }
+
+  .cont-salir button {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .tareas {
+    margin-top: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .cont-cabecera {
+    height: 6rem;
+  }
+  .lista-tareas {
+    height: auto;
+    width: 100%;
+  }
+
+  .cont-lista-tarea {
+    width: 24rem;
+  }
+
+  .cont-tarea * {
+    width: 6rem;
+  }
+
+  .formulario-tareas-agregar {
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+
+}

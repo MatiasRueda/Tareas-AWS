@@ -1,0 +1,146 @@
+.mas-detalles {
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0,0,0,.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cont-mas-detalles {
+  height: 40rem;
+  width: 35rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.cont-encabezado-mas-detalles {
+  margin: 0 auto;
+  height: 5rem;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cont-detalles {
+  margin: 0 auto;
+  width: 90%;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#texto {
+  height: 4.5rem;
+  display: flex;
+}
+
+.cont-detalles textarea {
+  height: 15rem !important;
+  width: 100% !important;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  padding-left: 0.5rem;
+  font-size: 1em;
+  resize: none;
+  outline: none;
+  font-family: inherit;
+}
+
+.cont-encabezado-mas-detalles button {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+  background-color: white;
+}
+
+.cont-encabezado-mas-detalles button:hover {
+  color: white;
+  background-color: black;
+}
+
+.cont-actualizar-button {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cont-actualizar-button button {
+  height: 3.5rem;
+  width: 8rem;
+  cursor: pointer;
+  background-color: white;
+}
+
+.cont-actualizar-button button:hover {
+  color: white;
+  background-color: black;
+}
+
+#actualizarTarea {
+  flex: 1 1 auto;
+  margin: 0 auto;
+  width: 90%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#actualizarTarea .cont-input {
+  height: 4.5rem;
+}
+
+.cont-actualizarTarea {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cont-actualizarTarea .cont-label {
+  text-align: start;
+}
+
+
+.cont-actualizarTarea .cont-input input{
+  padding-left: 0.3rem;
+}
+
+.cont-actualizarTarea textarea {
+  height: 15rem !important;
+  color: black;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  padding-left: 0.5rem;
+  font-size: 1em;
+  resize: none;
+  outline: none;
+  font-family: inherit;
+}
+
+.cont-form-botones-actualizarTarea {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cont-form-botones-actualizarTarea button {
+  height: 3.4rem;
+  width: 8rem;
+  cursor: pointer;
+  background-color: white;
+}
+
+.cont-form-botones-actualizarTarea button:hover {
+  color: white;
+  background-color: black;
+}
