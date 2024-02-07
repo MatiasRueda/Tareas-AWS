@@ -35,26 +35,23 @@ export default function SFRegistrar(props: { cargando: boolean , setCargando: Di
   
   return (
     <Fragment>
-      {!mensaje? 
-        <Fragment>
-          {props.cargando? 
-            <DCargando/> :
-            <SFormulario id="registrar" btnEnviar="Registrar" onSubmit={submit}>
-              <DSpan texto="Nombre:" />
-              <SInput nombre="nombre" type="text"
-                      reglas={{ required: "Escriba su nombre porfavor" , 
-                                maxLength: { value: 10, message: "maximo 10 caracteres" }}}/>
-              <DSpan texto="Contrasenia:"/>
-              <SInput nombre="contrasenia" type="password"
-                      reglas={{ required: "Escriba su contrasenia porfavor", 
-                                maxLength: { value: 10, message: "maximo 10 caracteres" }}}/>
-              <DSpan texto="Confirmar contrasenia:"/>
-              <SInput nombre="confirmarContrasnia" type="password" 
-                      reglas={{ required: "Reescriba su contrasenia porfavor" }} 
-                      inputIgual="contrasenia"/>
-            </SFormulario>}
-        </Fragment> : 
-        <DMensajeUsuario mensaje="Usuario ya registrado" volver={volver}/>}
+      { props.cargando? 
+          <DCargando/> :
+          <SFormulario id="registrar" btnEnviar="Registrar" onSubmit={submit}>
+            <DSpan texto="Nombre:" />
+            <SInput nombre="nombre" type="text"
+                    reglas={{ required: "Escriba su nombre porfavor" , 
+                              maxLength: { value: 10, message: "maximo 10 caracteres" }}}/>
+            <DSpan texto="Contrasenia:"/>
+            <SInput nombre="contrasenia" type="password"
+                    reglas={{ required: "Escriba su contrasenia porfavor", 
+                              maxLength: { value: 10, message: "maximo 10 caracteres" }}}/>
+            <DSpan texto="Confirmar contrasenia:"/>
+            <SInput nombre="confirmarContrasnia" type="password" 
+                    reglas={{ required: "Reescriba su contrasenia porfavor" }} 
+                    inputIgual="contrasenia"/>
+          </SFormulario>}
+      {mensaje && <DMensajeUsuario mensaje={mensaje} volver={volver}/>}
     </Fragment>
   )
 }
