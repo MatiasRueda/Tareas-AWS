@@ -17,8 +17,3 @@ type Usuario = {
   tareas: Tarea[];
   token: string;
 }
-
-type Informacion = {
-  agregarUsuario: (usuario: Usuario) => void;
-  sacarUsuario: () => void;
-}
